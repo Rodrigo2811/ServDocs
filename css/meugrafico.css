@@ -1,0 +1,45 @@
+
+
+.imagem-home:hover{
+  
+      
+ filter: drop-shadow(10px 5px 10px grey);
+
+}
+.imagem-home{
+    width: 80%;
+    cursor: pointer;
+    
+}
+
+.imagem-contato{
+    width: 50%;
+    padding: 30px;
+    height: 250px;
+    align-items: top;
+    
+} 
+.servicos{
+    border-radius: 30%;
+    
+}
+
+.servicos:hover{
+    background-color: #ff4500;
+    transition: 0.3s all;
+   filter: grayscale(30%);
+    cursor: pointer;
+}
+
+#carouselExampleDark{
+    width: 100%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: auto;
+   margin-right: auto;
+   height: 50%;
+
+   
+  
+
+}
