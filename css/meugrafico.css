@@ -1,8 +1,7 @@
 
 
 .imagem-home:hover{
-  
-      
+ 
  filter: drop-shadow(10px 5px 10px grey);
 
 }
@@ -32,14 +31,16 @@
 }
 
 #carouselExampleDark{
-    width: 80%;
+    width: 70%;
    margin-top: 10px;
    margin-bottom: 10px;
    margin-left: auto;
    margin-right: auto;
    height: 50%;
 
-   
-  
+}
 
+.img-logo{
+
+    width: 80%;
 }
