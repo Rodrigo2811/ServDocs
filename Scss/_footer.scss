@@ -1,0 +1,29 @@
+footer{
+    width: 100%;
+    text-align: left;
+    background-color: #ff4500;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    padding: 5px;
+
+}
+
+footer p{
+    text-align: right;
+    font-size: .8rem;
+     
+}
+
+.footer1{
+    text-align: left;
+    display: block;
+}
+
+.accordion {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}

@@ -1,20 +1,25 @@
 
 
 .imagem-home:hover{
- 
+ animation: toTop;
+ animation-duration: 1s;
  filter: drop-shadow(10px 5px 10px grey);
 
 }
 .imagem-home{
+    
+    border-radius: 1rem;
+    display: grid;
     width: 90%;
     cursor: pointer;
+    position: relative;
     
 }
 
 .imagem-contato{
     width: 50%;
     padding: 30px;
-    height: 250px;
+    height: auto;
     align-items: top;
     
 } 
@@ -26,21 +31,20 @@
 .servicos:hover{
     background-color: #ff4500;
     transition: 0.3s all;
-   filter: grayscale(30%);
+    filter: grayscale(30%);
     cursor: pointer;
 }
 
 #carouselExampleDark{
-    width: 70%;
+   width: 100%;
    margin-top: 10px;
    margin-bottom: 10px;
    margin-left: auto;
    margin-right: auto;
-   height: 50%;
+   height: auto;
 
 }
 
 .img-logo{
-
-    width: 80%;
+    width: 50%;
 }

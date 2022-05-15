@@ -1,0 +1,30 @@
+form h4{
+    padding:0;
+    margin: 0;
+    text-align: left;
+}
+form{
+    display: block;
+    width: 70%;
+    justify-content: space-between;
+     }
+
+form div{
+    background: whitesmoke;
+    border: 0;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    border-bottom: 2px solid #ff4500;
+    width: 80%;
+    height: auto;
+    padding: 2px;
+    margin: 10px auto 5px;
+    } 
+
+[type="text"], [type="e-mail"], textarea, label {
+	display: block;
+	width: 80%;
+    margin: 0;
+    padding:0;
+}
