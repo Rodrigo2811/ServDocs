@@ -1,12 +1,18 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+ 
+}
 html {
-    
+    box-sizing: border-box;
     font-size: 62.5%;
     }
 
 body {
     background-color: whitesmoke;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
  
 .main-container {
@@ -19,10 +25,10 @@ body {
 .container {
     display: block;
     float: left;
-    padding: 20px;
-    max-width: 100%;
+    padding: 10px;
+    
     margin: 0 auto;
-    max-width: 1198px;
+    max-width: 1098px;
 }
 header {
     background: #fff;
@@ -71,16 +77,14 @@ p{
 }
 
 img{
-
-    max-width: 100%;
+    width:  40%;
     height: auto;
 }
 .img {
-
     width: 100%;
     height: auto;
 }
-}
+
 .img-logo{
     width: 100%;
     height: auto;
@@ -97,6 +101,7 @@ section {
 }
 
 section nav{
+    text-decoration: none ;
     display: block;
     float: left;
     width: 30%;
@@ -104,15 +109,17 @@ section nav{
 }
 
 nav li {
+    text-decoration: none;
     background-color:rgba(255, 68, 0, 0.651);
     margin: 5px 20px 5px 0;
     padding: 10px;
-    font-size: 1.8rem;
+    font-size: 1.8rem ;
 }
 nav a{
     text-decoration: none;
            
 }
+
 
 nav a:hover{
     color: rgb(1, 1, 146);
@@ -123,37 +130,147 @@ section article {
     width: 70%;
     }
 
-
-
     footer{
     background-color: rgb(1, 1, 146);
     width: 100%;
-    display: block;
+    height: auto;
+    display: flex;
     float: left;
     color: white;
-    padding: 20px;
+    padding: 50px;
+    align-content: space-between;
+    
 
 }
 
 footer p{
    font-size: 1.5rem;
+   margin: auto;
+   padding: 10px;
 }
 
 footer small {
     font-size: 80%;
-    display: block;
+    display: flex;
 }
 @media (max-width: 810px){
-    section nav, section article, nav a{
+    section nav, section article, nav a, footer, img, form{
         width: 100%;
         height: auto;
         
     }
     
     @media (min-width: 425px) {
-        section nav, section article,  nav a{
+        section nav, section article,  nav a, footer, img, form{
             width: 100%;
             height: auto;
             
     }
  }
+}
+
+.fa-brands{
+    font-size: 3rem;
+    width: 30px;
+    margin: 0 10px 0;
+ 
+    color: white;
+}
+
+.fa-brands:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+.fa-solid{
+    padding-top: 10px;
+    color: white;
+    display: flex;
+    margin: 0 10px 0;
+    font-size: 3rem;
+    width: 30px;
+}
+
+.fa-solid:hover{
+    cursor: pointer;
+    color: orange;
+}
+.rede_social{
+    padding-top: 10px;
+    display: inline-block;
+    padding-left: 300px;   
+}
+
+.cog-heading{
+    margin-left: 20px !important;
+    color: rgba(6, 6, 160, 0.808) !important;
+}
+
+label{
+    margin-left: 25px !important;
+    font-size: 2rem !important;
+}
+
+#cog-input-auto-1{
+    padding-left: 5px !important;
+    margin-left: 2px !important;
+}
+
+input{
+
+    width: 70% !important;
+}
+
+textarea{
+    width: 70% !important;
+}
+.el-input__inner{
+    font-size: 1.6rem !important;
+    margin-left: 20px !important;
+    border-radius: 15px !important;
+    
+}
+
+.el-button{
+    
+    font-size: 1.6rem;
+    margin-left: 20px !important;
+    width: 100px !important;
+    border-radius: 15px !important;
+    background: blue !important;
+}
+
+.cog-form__container{
+    margin-left: 20px !important;
+    background: rgba(177, 173, 172, 0.651) !important;
+}
+
+.form{
+    z-index: -1 !important;
+    width: 85%;
+}
+
+.rodape{
+    display: flex;
+    margin:auto;
+    padding-left: 250px;
+}
+
+.cog-label{
+
+    margin-left: 25px !important;
+    font-size: 2rem !important;
+}
+
+.el-textarea__inner{
+    margin-left: 20px !important;
+    font-size: 2rem !important;                                                                                                                                                                                                 
+
+}
+
+.cog-name__first-input{
+    margin-left: 2px !important;
+}
+#cog-input-auto-1 {
+    margin-left: -70px !important;
+}
