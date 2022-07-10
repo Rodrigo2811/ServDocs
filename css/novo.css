@@ -2,20 +2,19 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
 html {
-  max-width: 1198px;
   margin: 0 auto !important;
 }
 
 header {
+  background-image: linear-gradient(rgba(0, 0, 255, 0.747), rgba(255, 166, 0, 0.575));
   margin-top: 2px;
-  border-bottom: 2px solid orangered;
   color: blue;
-  display: flex;
+  display: block;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -34,6 +33,7 @@ li {
 }
 
 a {
+  font-size: 1.5rem;
   color: blue !important;
   text-decoration: none !important;
 }
@@ -47,17 +47,22 @@ ul p {
   text-align: right;
 }
 
+.fa-whatsapp {
+  font-size: 1.5rem;
+  margin-left: 400px;
+}
+
 footer {
   width: 100%;
   text-align: left;
-  background-color: #ff4500;
+  border-top: 1px solid orange;
   color: blue;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 15px;
   margin-bottom: 2px;
-  padding: 5px;
+  padding: 50px;
 }
 
 footer p {
@@ -142,6 +147,7 @@ article {
   justify-content: center;
   flex-direction: row;
   margin-top: 2px;
+  margin-left: 5px;
   color: blue;
   text-align: center;
 }

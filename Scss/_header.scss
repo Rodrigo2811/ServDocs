@@ -1,9 +1,9 @@
 
 header{
+    background-image: linear-gradient(rgba(0, 0, 255, 0.747), rgba(255, 166, 0, 0.575));
     margin-top: 2px;
-    border-bottom: 2px solid orangered;
     color: blue;
-    display: flex ;
+    display: block ;
     flex-direction: row;
     justify-content: space-between ;
     align-items: center ;
