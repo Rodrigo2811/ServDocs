@@ -42,7 +42,7 @@ article{
 }
 
 article p{
-    border-bottom: 2px solid #ff4500;
+   
     margin: 5px;
     align-items: center;
     padding: 5px;
@@ -57,3 +57,14 @@ article p{
 
 
 
+
+#sobre p{
+    margin-top: 35px;
+    text-align: left;
+    color: blue;
+}
+
+#sobre h2{
+    color: orange;
+    margin-top: 40px;
+}
