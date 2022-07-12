@@ -1,7 +1,7 @@
 footer{
     width: 100%;
     text-align: left;
-    border-top: 1px solid orange;
+    background-image: linear-gradient(rgba(255, 166, 0, 0.575), rgba(0, 0, 255, 0.747));
     color: blue;
     display: flex;
     flex-direction: row;
@@ -13,12 +13,13 @@ footer{
 }
 
 footer p{
-    text-align: right;
+    text-align: left;
     font-size: .8rem;
      
 }
 
 .footer1{
+
     text-align: left;
     display: block;
 }
@@ -26,4 +27,9 @@ footer p{
 .accordion {
     padding-top: 10px;
     padding-bottom: 30px;
+}
+
+.footer1 h3{
+    color: black;
+    font-size: 1.9rem;
 }
