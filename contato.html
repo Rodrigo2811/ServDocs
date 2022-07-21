@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/meugrafico.css">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<script src="./JS/bootstrap.min.js"></script>
+	<script src="./JS/script.js"></script>
 
 </head>
 
@@ -34,22 +35,27 @@
 	</header>
 
 	<section>
+		<div class="container-titulo-contato">
+			<h5 class="titulo-contato">Fale Conosco</h5>
+		</div>
+		
 		<article>
-			<img class="imagem-contato" src="./imagens/atendente.jpg">
+			
+			<img class="imagem-contato" src="./imagens/atendente.jpg" width="500px">
 
 
-			<form action="" class="form-contato">
+			<form action=""  method="post" class="form-contato">
 				<div class="col-md-4">
 					<label for="Nome" class="form-label">Nome</label>
-					<input type="text" class="form-control" id="Nome" value="" required>
+					<input type="text" class="form-control" id="Nome">
 				</div>
 				<div class="col-md-4">
 					<label for="email" class="form-label">Email</label>
-					<input type="email" class="form-control" id="email" value="" required>
+					<input type="email" class="form-control" id="email">
 				</div>
 				<div class="col-md-4">
 					<label for="telefone" class="form-label">Telefone</label>
-					<input type="text" class="form-control" id="telefone" value="">
+					<input type="text" class="form-control" id="telefone" maxlength="15">
 				</div>
 
 				<div class="mb-3">
@@ -58,7 +64,7 @@
 
 				</div>
 				<p>
-					<button class="btn btn-primary" type="submit" data-bs-toggle="collapse" data-bs-target="#contentId"
+					<button class="btn btn-primary" type="button" onclick="validaContato()"  data-bs-toggle="collapse" data-bs-target="#contentId"
 						aria-expanded="false" aria-controls="contentId">
 						Enviar
 					</button>

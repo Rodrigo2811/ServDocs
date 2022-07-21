@@ -253,4 +253,18 @@ article p {
   height: 420px;
 }
 
+.container-titulo-contato {
+  width: 45%;
+  font-weight: 600;
+  text-align: left;
+}
+
+.titulo-contato {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: -13px;
+  margin-left:;
+}
+
 /*# sourceMappingURL=novo.css.map */
