@@ -254,17 +254,16 @@ article p {
 }
 
 .container-titulo-contato {
-  width: 45%;
+  width: 50%;
   font-weight: 600;
-  text-align: left;
 }
 
 .titulo-contato {
   text-align: center;
+  color: orange;
   font-size: 2rem;
-  margin-top: 10px;
-  margin-bottom: -13px;
-  margin-left:;
+  margin-top: 30px;
+  margin-bottom: -10px;
 }
 
 /*# sourceMappingURL=novo.css.map */
