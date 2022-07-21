@@ -18,7 +18,7 @@
 
 .imagem-contato{
     width: 50%;
-    
+    box-shadow: 10px 10px 10px grey;
     height: auto;
     align-items: top;
     border-radius: 100px;

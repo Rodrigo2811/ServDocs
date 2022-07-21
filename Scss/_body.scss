@@ -9,14 +9,14 @@ h3{
     font-size: .8rem !important;
 }
 section h4{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     color: blue;
-}
-  
-
-    section h4{
-    width: 100%;
-    margin-top: 5px;
+    background: orange;
+    padding: 50px;
+    box-shadow: 5px 2px 10px black;
  }
 
 .servicos{
@@ -28,6 +28,14 @@ section h4{
   
 }
 
+.container-contato{
+    display: inline-flex;
+}
+
+.container-img-contato{
+
+    padding: 50px;
+}
 
 article{
     display: flex;
@@ -75,26 +83,21 @@ article p{
 }
 
 .acordion{
-
         display: flex;
         align-items: center;
-        justify-content: left;
+        justify-content: right;
         flex-direction: row;
         margin-top: 2px;
         margin-left: 5px;
         color: blue;
         text-align: center;
         padding-left: 30px;
+        width: 700px;
+     
     }
 
-
-    .btn-group{
-
-        margin-top: 30px;
+    #accordionExample{
+        width: 100%;
     }
 
-    .form-certidao .col-md-4{
-
-        text-align: left;
-
-    }
+   
