@@ -234,7 +234,7 @@ article p {
   justify-content: right;
   flex-direction: row;
   margin-top: 2px;
-  margin-left: 5px;
+  margin-left: 80px;
   color: blue;
   text-align: center;
   padding-left: 30px;
@@ -243,6 +243,14 @@ article p {
 
 #accordionExample {
   width: 100%;
+}
+
+.container-img-contato {
+  padding: 20px;
+  border: 2px solid orange;
+  margin-left: 80px;
+  margin-top: 20px;
+  height: 420px;
 }
 
 /*# sourceMappingURL=novo.css.map */
