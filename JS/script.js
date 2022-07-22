@@ -77,6 +77,39 @@ window.onload = function(){
 }
 
 
-$(document).ready(function(){
+function validaCertidao(){
+
+    const nome = document.getElementById('Nome')
+    const email = document.getElementById('email')
+    const telefone = document.getElementById('telefone')
+    const cidade = document.getElementById('cidade')
+    const estado = document.getElementById('estado')
     
-})
+
+    if(nome.value == ""){
+        $(".nome").attr("style", "background-color: red")   
+              
+        nome.focus()
+        return false;
+    }
+    if(email.value == ""){
+        'border:', 'red';
+        
+        email.focus()
+        return false;
+    }
+    if(telefone.value == ""){
+        'border:', 'red';
+        
+        telefone.focus()
+        return false;
+     }
+     if(cidade.value == ""){
+        'border:', 'red';
+        
+        cidade.focus()
+        return false;
+    }
+
+}
+

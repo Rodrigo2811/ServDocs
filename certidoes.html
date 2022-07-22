@@ -27,7 +27,7 @@
 				<li><a href="contato.html">Contato</li></a>
 				<li><a href="cliente.html">Clientes</li></a>
 				<li><a href="Sobre.html">Sobre Nos</a></li>
-				<i class="fa-brands fa-whatsapp"> Contato: (71) 98366-5465</i>
+			
 			</ul>
 		</nav>
 	</header>
@@ -36,12 +36,12 @@
 	<article class="form-certidao">
 
 
-		<form action="" method="post" class="form-contato">
+		<form action="" method="post" id="furmulario-certidao">
 
 			<div class="form-group" id="select-certidao">
-				<label for="my-select">Tipo de certidão</label>
+				<label for="my-select">Tipo de Certidão</label>
 				<select id="my-select" class="form-control" name="">
-					<option selected="selected">Selecione a certidão</option>
+					<option selected="selected" value="Selecione a Certidão">Selecione a Certidão</option>
 					<option>Casamento</option>
 					<option>Nascimento</option>
 					<option>Óbito</option>
@@ -51,31 +51,31 @@
 
 			<div class="col-md-4" class="form-dados">
 				<label for="Nome" class="form-label">Nome</label>
-				<input type="text" class="form-control" id="Nome">
+				<input type="text" class="form-control" id="Nome" value="">
 			</div>
 			<div class="col-md-4">
 				<label for="email" class="form-label">Email</label>
-				<input type="email" class="form-control" id="email">
+				<input type="email" class="form-control" id="email" value="">
 			</div>
 			<div class="col-md-4">
 				<label for="telefone" class="form-label">Telefone</label>
-				<input type="text" class="form-control" id="telefone" maxlength="15">
+				<input type="text" class="form-control" id="telefone" maxlength="15" value="">
 			</div>
 
 			<div class="col-md-4">
 				<label for="cidade" class="form-label">Cidade</label>
-				<input type="text" class="form-control" id="cidade">
+				<input type="text" class="form-control" id="cidade" value="">
 			</div>
 			<div class="col-md-4">
 				<label for="estado" class="form-label">Estado</label>
-				<input type="text" class="form-control" id="estado">
+				<input type="text" class="form-control" id="estado" value="">
 			</div>
 			<div class="col-md-4">
 				<label for="estado" class="form-label">Estado</label>
-				<input type="text" class="form-control" id="estado">
+				<input type="text" class="form-control" id="estado" value="">
 			</div>
 			<p>
-				<button class="btn btn-primary" type="button" onclick="validaCertidão()" data-bs-toggle="collapse"
+				<button class="btn btn-primary" type="button" onclick="validaCertidao()" data-bs-toggle="collapse"
 					data-bs-target="#contentId" aria-expanded="false" aria-controls="contentId" id="btn-certidao">
 					Solicitar
 				</button>
@@ -84,7 +84,6 @@
 
 			</div>
 		</form>
-
 
 
 
@@ -101,7 +100,8 @@
 		<div class="Redes">
 			<a href="https://instagram.com/servidocs_?igshid=YmMyMTA2M2Y=">
 				<i class="fa-brands fa-instagram"> Instagram</i></a>
-			<p style="color: blue; font-size: 1rem;"> <i class="fa-solid fa-at"></i> atendimentoservidocs@gmail.com</p>
+			<p> <i class="fa-solid fa-at"></i> atendimentoservidocs@gmail.com</p>
+			<a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"> Contato: (71) 98366-5465</i></a>
 
 		</div>
 

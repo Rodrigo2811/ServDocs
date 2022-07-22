@@ -55,7 +55,7 @@ footer {
   width: 100%;
   text-align: left;
   background-image: linear-gradient(rgba(255, 166, 0, 0.575), rgba(0, 0, 255, 0.747));
-  color: blue;
+  color: black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -65,11 +65,13 @@ footer {
 }
 
 footer p {
-  text-align: left;
-  font-size: 0.8rem;
+  text-align: right;
+  font-size: 1.2rem;
+  margin-bottom: 0;
 }
 
 .footer1 {
+  color: black;
   text-align: left;
   display: block;
 }
@@ -81,7 +83,22 @@ footer p {
 
 .footer1 h3 {
   color: black;
-  font-size: 1.9rem;
+  font-size: 1.2rem !important;
+}
+
+footer .Redes {
+  color: black !important;
+  text-align: right;
+}
+
+.fa-brands {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.fa-brands:hover {
+  color: orangered;
+  font-size: 1.2rem;
 }
 
 form h4 {
@@ -102,10 +119,12 @@ form div {
 }
 
 form input {
+  text-align: left;
   width: 500px !important;
 }
 
 form textarea {
+  text-align: left;
   width: 500px !important;
 }
 
@@ -126,13 +145,14 @@ form textarea {
 
 .form-control {
   width: 1055px;
-  text-align: center;
+  text-align: left;
   font-size: 1.5rem;
 }
 
 #my-select {
   width: 1087px !important;
   margin-bottom: 20px;
+  border: 2px solid grey;
 }
 
 #select-certidao {

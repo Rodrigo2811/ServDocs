@@ -18,10 +18,12 @@ form div{
 
     
     form input{
+        text-align: left;
         width: 500px !important;
     }
 
     form textarea {
+        text-align: left;
         width: 500px !important;
     }
 
@@ -38,6 +40,7 @@ form div{
         }
     }
    
+   
     .form-certidao{
         display: block;
         margin-left: -100px;
@@ -45,13 +48,16 @@ form div{
 
     .form-control{
         width: 1055px ;
-        text-align: center;
+        text-align: left;
         font-size: 1.5rem;
+        
+       
     }
 
     #my-select{
         width: 1087px !important;
         margin-bottom: 20px;
+        border: 2px solid grey;
     }
 #select-certidao{
     margin-left: 240px;
