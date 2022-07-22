@@ -1,16 +1,18 @@
+
 function validaContato(){
     
-    const nome = document.getElementById('Nome');
-    const email = document.getElementById('email');
-    const telefone = document.getElementById('telefone');
-    const mensagem = document.getElementById('mensagem');
+const nome = document.getElementById('Nome')
+const email = document.getElementById('email')
+const telefone = document.getElementById('telefone')
+const mensagem = document.getElementById('mensagem')
 
     if(nome.value == "") {
         alert('nome nao informado');
-        
+               
+       
         nome.focus();
         return false;
-                
+          
     }
 
     if(email.value =="" || email.value.indexOf('@')==-1 ||email.value.indexOf('.')==-1)
@@ -19,6 +21,7 @@ function validaContato(){
         email.focus();
         return false;
     {
+        
     }
 }
 
@@ -74,9 +77,6 @@ window.onload = function(){
 }
 
 
-
-function validaCertidão(){
-
-
-
-}
+$(document).ready(function(){
+    
+})

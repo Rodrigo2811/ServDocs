@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/novo.css">
 	<link rel="stylesheet" type="text/css" href="./css/meugrafico.css">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<script src="./JS/bootstrap.min.js"></script>
-    <title>ServiDocs-Solicitação de certidão</title>
+	<script src="./JS/jquery-3.6.0.min.js"></script>
+	<script src="./JS/script.js"></script>
+	<title>ServiDocs-Solicitação de certidão</title>
 </head>
+
 <body>
 
-    <header>
+	<header>
 		<div>
 			<img class="img-logo" src="./imagens/logomarca.webp">
 		</div>
@@ -23,86 +27,87 @@
 				<li><a href="contato.html">Contato</li></a>
 				<li><a href="cliente.html">Clientes</li></a>
 				<li><a href="Sobre.html">Sobre Nos</a></li>
-			    <i class="fa-brands fa-whatsapp"> Contato: (71) 98366-5465</i>
+				<i class="fa-brands fa-whatsapp"> Contato: (71) 98366-5465</i>
 			</ul>
 		</nav>
 	</header>
 	<h2 class="titulo-form-certidao">Faça aqui seu pedido de certidão</h2>
+
 	<article class="form-certidao">
 
-		<p class="cabecalho-tp-certidao">Tipo de Certidão </p>
-		<div class="btn-group" data-bs-toggle="buttons">
-			<label class="btn btn-primary active">
-				<input type="radio" class="me-2" name="tipo" id="" autocomplete="off" value="nascimento"> Nascimento
-			</label>
-			<label class="btn btn-primary">
-				<input type="radio" name="tipo" id="" autocomplete="off" value="Óobito"> Óbito
-			</label>
-			<label class="btn btn-primary">
-				<input type="radio" name="tipo" id="" autocomplete="off" value="casamento"> Casamento
-			</label>
-			<label class="btn btn-primary">
-				<input type="radio" name="tipo" id="" autocomplete="off" value="protesto"> Protesto
-			</label>
-		</div>	
-		<div class="col-md-4">
-			<label for="Nome" class="form-label"> Nome</label>
-			<input type="text" class="form-control" id="Nome" value="" required>
-		  </div>
 
-		  <div class="col-md-4">
-			<label for="CPF" class="form-label"> CPF</label>
-			<input type="text" class="form-control" id="CPF" value="" required>
-		</div>
+		<form action="" method="post" class="form-contato">
 
-		<div class="col-md-4">
-			<label for="telefone" class="form-label"> Telefone</label>
-			<input type="text" class="form-control" id="telefone" value="" required>
-		</div>
+			<div class="form-group" id="select-certidao">
+				<label for="my-select">Tipo de certidão</label>
+				<select id="my-select" class="form-control" name="">
+					<option selected="selected">Selecione a certidão</option>
+					<option>Casamento</option>
+					<option>Nascimento</option>
+					<option>Óbito</option>
+				</select>
+			</div>
+			</div>
 
-		<div class="col-md-4">
-			<label for="Data" class="form-label"> Data de Nascimento</label>
-			<input type="date" class="form-control" id="Data" value="" required>
-		</div>
+			<div class="col-md-4" class="form-dados">
+				<label for="Nome" class="form-label">Nome</label>
+				<input type="text" class="form-control" id="Nome">
+			</div>
+			<div class="col-md-4">
+				<label for="email" class="form-label">Email</label>
+				<input type="email" class="form-control" id="email">
+			</div>
+			<div class="col-md-4">
+				<label for="telefone" class="form-label">Telefone</label>
+				<input type="text" class="form-control" id="telefone" maxlength="15">
+			</div>
 
-		<div class="col-md-4">
-			<label for="cidade" class="form-label"> Cidade</label>
-			<input type="text" class="form-control" id="cidade" value="" required>
-		</div>
+			<div class="col-md-4">
+				<label for="cidade" class="form-label">Cidade</label>
+				<input type="text" class="form-control" id="cidade">
+			</div>
+			<div class="col-md-4">
+				<label for="estado" class="form-label">Estado</label>
+				<input type="text" class="form-control" id="estado">
+			</div>
+			<div class="col-md-4">
+				<label for="estado" class="form-label">Estado</label>
+				<input type="text" class="form-control" id="estado">
+			</div>
+			<p>
+				<button class="btn btn-primary" type="button" onclick="validaCertidão()" data-bs-toggle="collapse"
+					data-bs-target="#contentId" aria-expanded="false" aria-controls="contentId" id="btn-certidao">
+					Solicitar
+				</button>
+			</p>
+			<div class="collapse" id="contentId">
 
-		<div class="col-md-4">
-			<label for="estado" class="form-label"> Estado</label>
-			<input type="box" class="form-control" id="estado" value="" required>
-		</div>
+			</div>
+		</form>
 
-		
-		
 
-		<p></p><button class="btn btn-primary" type="submit" data-bs-toggle="collapse" data-bs-target="#contentId" aria-expanded="false"
-							aria-controls="contentId">
-						Solicitar
-					</button>
-				  </p>
-				  <div class="collapse" id="contentId">
+
+
 	</article>
 
 	<footer>
 		<div class="footer1">
 			<h3>Rua Getulio Vargas Nº 33 - loja 9</h3>
-				<h3>Centro - Dias d'Ávila</h3>
-				<h3>Cep 42850-000</h3>
-									
-			</div>
-		
-				<div class="Redes">
-					<a href="https://instagram.com/servidocs_?igshid=YmMyMTA2M2Y=">
-						<i class="fa-brands fa-instagram"> Instagram</i></a>
-					<p style="color: blue; font-size: 1rem;"> <i class="fa-solid fa-at"></i> atendimentoservidocs@gmail.com</p>
-			
-				</div>
-			
+			<h3>Centro - Dias d'Ávila</h3>
+			<h3>Cep 42850-000</h3>
+
+		</div>
+
+		<div class="Redes">
+			<a href="https://instagram.com/servidocs_?igshid=YmMyMTA2M2Y=">
+				<i class="fa-brands fa-instagram"> Instagram</i></a>
+			<p style="color: blue; font-size: 1rem;"> <i class="fa-solid fa-at"></i> atendimentoservidocs@gmail.com</p>
+
+		</div>
+
 	</footer>
 	<script src="https://kit.fontawesome.com/6603d8438e.js" crossorigin="anonymous"></script>
-    
+
 </body>
+
 </html>
