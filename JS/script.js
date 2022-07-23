@@ -1,47 +1,66 @@
+const form = document.getElementById('form-contato');
 
-function validaContato(){
+if (form.addEventListener){
+    form.addEventListener("submit", validaContato)
+}else if (form.attachEvent){
+    form.attachEvent("onsubmit", validaContato);
+}
+function validaContato(evt){
     
 const nome = document.getElementById('Nome')
 const email = document.getElementById('email')
 const telefone = document.getElementById('telefone')
 const mensagem = document.getElementById('mensagem')
+const contErro = ("")
+
 
     if(nome.value == "") {
-        alert('nome nao informado');
-               
        
+        nome.style.border = "2px solid red";
         nome.focus();
         return false;
-          
+        }else {
+        nome.style.border = '2px solid blue'
+                  
     }
 
-    if(email.value =="" || email.value.indexOf('@')==-1 ||email.value.indexOf('.')==-1)
-    {
-        alert('informe um email válido');
+    if(email.value =="" || email.value.indexOf('@')==-1 ||email.value.indexOf('.')==-1){
+
+        email.style.border = "2px solid red"
         email.focus();
         return false;
-    {
-        
-    }
+    }else{
+
+    email.style.border = "2px solid blue";
+         
 }
-
     if(telefone.value == "") {
-        alert('informe o telefone');
-
-        telefone.focus();
-        return false;
+      telefone.style.border = "2px solid red"
+      telefone.focus();
+     return false;
+    }else{
+        telefone.style.border = "2px solid blue"
     }
+
     if(mensagem.value == ""){
-        alert('digite sua mensagem')
-
-        mensagem.focus();
-        return false;
+    mensagem.style.border = "2px solid red"
+    mensagem.focus();
+    return false;
+    }else{
+        mensagem.style.border = "2px solid blue"
     }
-    if (mensagem.value.length < 20 ){
 
-        alert('É necessario preencher o campo mensagem com mais de 20 caracteres.')
+
+    if (mensagem.value.length < 20 ){
+        mensagem.style.border = "2px solid red"
         mensagem.focus();
         return false;
+    }else{
+        mensagem.style.border = "2px solid blue"
+    }
+
+    if (contErro > ""){
+        evt.preventDefault();
     }
     
 }
@@ -77,6 +96,8 @@ window.onload = function(){
 }
 
 
+
+
 function validaCertidao(){
 
     const nome = document.getElementById('Nome')
@@ -87,7 +108,7 @@ function validaCertidao(){
     
 
     if(nome.value == ""){
-        $(".nome").attr("style", "background-color: red")   
+       $('nome').css('border:', 'red');
               
         nome.focus()
         return false;
@@ -99,13 +120,13 @@ function validaCertidao(){
         return false;
     }
     if(telefone.value == ""){
-        'border:', 'red';
+        'background-color:', 'red';
         
         telefone.focus()
         return false;
      }
      if(cidade.value == ""){
-        'border:', 'red';
+        'background-color:', 'red';
         
         cidade.focus()
         return false;
@@ -113,3 +134,8 @@ function validaCertidao(){
 
 }
 
+$(document).ready(function(){
+    $('.imagem-home').focus(function(){
+        $(this).css('border', '2px solid red');
+    })
+})

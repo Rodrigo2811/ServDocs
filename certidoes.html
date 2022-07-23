@@ -27,7 +27,7 @@
 				<li><a href="contato.html">Contato</li></a>
 				<li><a href="cliente.html">Clientes</li></a>
 				<li><a href="Sobre.html">Sobre Nos</a></li>
-			
+
 			</ul>
 		</nav>
 	</header>
@@ -74,14 +74,42 @@
 				<label for="estado" class="form-label">Estado</label>
 				<input type="text" class="form-control" id="estado" value="">
 			</div>
-			<p>
-				<button class="btn btn-primary" type="button" onclick="validaCertidao()" data-bs-toggle="collapse"
-					data-bs-target="#contentId" aria-expanded="false" aria-controls="contentId" id="btn-certidao">
-					Solicitar
-				</button>
-			</p>
-			<div class="collapse" id="contentId">
 
+			<div class="col-md-4">
+				<label for="estado" class="form-label">Estado</label>
+				<input type="text" class="form-control" id="estado" value="">
+			</div>
+
+			<div class="col-md-4">
+				<label for="estado" class="form-label">Estado</label>
+				<input type="text" class="form-control" id="estado" value="">
+			</div>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+				id="btn-certidao">
+				Solicitar </button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Solicitação Enviada!</h5>
+							<P></P>
+
+						</div>
+						<div class="modal-body">
+							Seus dados estão protegidos. <br>
+							Em breve entraremos em contato. <br>
+						</div>
+						<div class="modal-footer">
+							<h5 class="msn-modal-footer"></h5>
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+						</div>
+					</div>
+				</div>
 			</div>
 		</form>
 

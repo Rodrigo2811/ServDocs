@@ -108,3 +108,74 @@ form div{
 
     margin-left: -90px;
   }  
+
+  .modal{
+position: fixed;
+top: 50% !important;
+left: 5% !important;
+z-index: 1055;
+display: none;
+width: 100%;
+height: 100%;
+overflow-x: hidden;
+overflow-y: auto;
+outline: 0;
+transform: translate(-20%, -50%);
+  }
+
+  .modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom:none !important;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+  }
+
+  .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+    margin-left: 0;
+    text-align: center;
+
+  }
+
+  .modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    transform: translate(110%, -50%) !important;
+    margin-top: 15px;
+   
+  }
+
+  .msn-modal-footer{
+    margin-right: 45px;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: left;
+    justify-content: right;
+    padding: .75rem;
+    border-top: none !important;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+    margin-left: -185px;
+  }
+
+  .modal-header .btn-close {
+    padding: .5rem .5rem;
+    margin: -.5rem 9.5rem -.5rem auto !important;
+  }
+
+  .btn-secondary:hover {
+    color: #fff;
+    background-color: #e6b806 !important;
+    border-color: #565e64;
+    filter: opacity();
+  }
