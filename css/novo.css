@@ -355,6 +355,24 @@ article p {
   width: 100%;
 }
 
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+.d-block {
+  margin-left: 50%;
+  transform: translate(-50%);
+  border-radius: 20px;
+  transition: transform 0.6s ease-in-out;
+}
+
 .container-img-contato {
   padding: 20px;
   border: 2px solid orange;
