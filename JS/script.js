@@ -1,4 +1,4 @@
-const form = document.getElementById('#frm-contato');
+const form = document.getElementById('formContato');
 
 if (form.addEventListener){
     form.addEventListener("submit", validaContato)

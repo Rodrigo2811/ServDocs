@@ -355,6 +355,11 @@ article p {
   width: 100%;
 }
 
+.accordion-body {
+  text-align: justify;
+  color: black;
+}
+
 .carousel-item {
   position: relative;
   display: none;
