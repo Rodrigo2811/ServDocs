@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Roboto:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -119,6 +120,7 @@ form div {
 }
 
 form input {
+  border: none;
   text-align: left;
   width: 500px !important;
 }
@@ -127,6 +129,7 @@ form textarea {
   text-align: left;
   width: 500px !important;
 }
+
 
 .btn-primary {
   width: 400px;
@@ -138,6 +141,7 @@ form textarea {
     width: 80%;
   }
 }
+
 .form-certidao {
   display: block;
   margin-left: -100px;
