@@ -23,7 +23,7 @@
 			<ul>
 				<li><a href="home.html">Inicio</li></a>
 				<li><a href="servicos.html">Serviços</li></a>
-				<li><a href="contato.html">Contato</li></a>
+				<li><a href="contato.html" class="btn-active">Contato</li></a>
 				<li><a href="cliente.html">Clientes</li></a>
 				<li><a href="Sobre.html">Sobre Nós</a></li>
 
@@ -41,7 +41,9 @@
 			<img class="imagem-contato" src="./imagens/atendente.jpg" width="500px">
 
 
-			<form action="" method="POST" class="form-contato" id="formContato">
+			<form action="https://formsubmit.co/atendimentoservidocs@gmail.com" method="post" class="form-contato"
+				id="formContato">
+
 				<div class="col-md-4">
 					<label for="Nome" class="form-label">Nome</label>
 					<input type="text" class="form-control" id="Nome" name="nome">
@@ -61,17 +63,34 @@
 
 				</div>
 				<p>
-					<button class="btn btn-primary" type="button" onclick="validaContato()" data-bs-toggle="collapse"
-						data-bs-target="#contentId" aria-expanded="false" aria-controls="contentId" id="btn-contato">
+					<button class="btn btn-primary" type="button" value="submit" onclick="validaContato()" data-toggle="modal"
+						data-target="#contentId" aria-expanded="false" aria-controls="contentId" id="btn-contato">
 						Enviar
 					</button>
 				</p>
+				<input type="hidden" name="_captcha" value="false">
 				<div class="collapse" id="contentId">
 
 				</div>
+				<div class="modal" tabindex="-1" role="dialog" id="modal-contato">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Mensagem Enviada com</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>Texto do corpo do modal, é aqui.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</form>
-
-
 	</section>
 	</article>
 
@@ -87,7 +106,7 @@
 			<a href="https://instagram.com/servidocs_?igshid=YmMyMTA2M2Y=">
 				<i class="fa-brands fa-instagram"> Instagram</i></a>
 			<p> <i class="fa-solid fa-at"></i> atendimentoservidocs@gmail.com</p>
-			<a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"> Contato: (71) 98366-5465</i></a>
+			<a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"> (71) 98366-5465</i></a>
 
 		</div>
 

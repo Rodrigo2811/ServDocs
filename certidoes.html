@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/novo.css">
 	<link rel="stylesheet" type="text/css" href="./css/meugrafico.css">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<script src="./JS/validaCertidao.js"></script>
 
 	<title>ServiDocs-Solicitação de certidão</title>
 </head>
@@ -34,12 +35,12 @@
 	<article class="form-certidao">
 
 
-		<form action="" method="post" id="furmulario-certidao">
+		<form action="https://formsubmit.co/atendimentoservidocs@gmail.com" id="furmulario-certidao" method="post">
 
 			<div class="form-group" id="select-certidao">
 				<label for="my-select"></label>
 				<select id="my-select" class="form-control" name="">
-					<option selected="selected" value="Selecione a Certidão">Selecione a Certidão</option>
+					<option selected="selected">Selecione a Certidão</option>
 					<option>Casamento</option>
 					<option>Nascimento</option>
 					<option>Óbito</option>
@@ -53,7 +54,7 @@
 			</div>
 			<div class="col-md-4">
 				<label for="email" class="form-label">Email</label>
-				<input type="email" class="form-control" id="email" value="">
+				<input type="email" class="form-control" id="email">
 			</div>
 			<div class="col-md-4">
 				<label for="telefone" class="form-label">Telefone</label>
@@ -69,44 +70,31 @@
 				<input type="text" class="form-control" id="estado" value="">
 			</div>
 			<div class="col-md-4">
-				<label for="estado" class="form-label">Estado</label>
-				<input type="text" class="form-control" id="estado" value="">
+				<label for="cartorio" class="form-label">Cartório</label>
+				<input type="text" class="form-control" id="cartorio" value="">
+			</div>
+			<div class="col-md-4">
+				<label for="livro" class="form-label">Livro</label>
+				<input type="text" class="form-control" id="livro" value="">
+			</div>
+			<div class="col-md-4">
+				<label for="folha" class="form-label">Folha</label>
+				<input type="text" class="form-control" id="folha" value="">
+			</div>
+			<div class="col-md-4">
+				<label for="termo" class="form-label">Termo</label>
+				<input type="text" class="form-control" id="termo" value="">
+			</div>
+			<div class="col-md-4">
+				<label for="anexo" class="form-label">Anexar Documento</label>
+				<input type="file" class="form-control" id="anexo" value="">
 			</div>
 
-			<div class="col-md-4">
-				<label for="estado" class="form-label">Estado</label>
-				<input type="text" class="form-control" id="estado" value="">
-			</div>
 
-			<div class="col-md-4">
-				<label for="estado" class="form-label">Estado</label>
-				<input type="text" class="form-control" id="estado" value="">
-			</div>
 			<!-- Button trigger modal -->
 			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-				id="btn-certidao" onclick="validaCertidao()">
-				Solicitar </button>
+				id="btn-certidao" onclick="validaCertidao()">Solicitar</button>
 
-			<!-- Modal -->
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="exampleModalLabel">Solicitação Enviada!</h5>
-							<P></P>
-
-						</div>
-						<div class="modal-body">
-							Seus dados estão protegidos. <br>
-							Em breve entraremos em contato. <br>
-						</div>
-						<div class="modal-footer">
-							<h5 class="msn-modal-footer"></h5>
-							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-
-						</div>
-					</div>
-				</div>
 			</div>
 		</form>
 
@@ -126,7 +114,7 @@
 			<a href="https://instagram.com/servidocs_?igshid=YmMyMTA2M2Y=">
 				<i class="fa-brands fa-instagram"> Instagram</i></a>
 			<p> <i class="fa-solid fa-at"></i> atendimentoservidocs@gmail.com</p>
-			<a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"> Contato: (71) 98366-5465</i></a>
+			<a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"> (71) 98366-5465</i></a>
 
 		</div>
 

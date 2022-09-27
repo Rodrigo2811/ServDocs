@@ -1,11 +1,12 @@
-const form = document.querySelector("#formContato");
+const frmContato = document.querySelector("#formContato");
 
-if (form.addEventListener) {
-    form.addEventListener("submit", validaContato)
-} else if (form.attachEvent) {
-    form.attachEvent("onsubmit", validaContato);
+if (frmContato.addEventListener) {
+    frmContato.addEventListener("submit", validaContato)
+} else if (frmContato.attachEvent) {
+    frmContato.attachEvent("onsubmit", validaContato);
 }
 function validaContato(evt) {
+    const myModal = document.getElementById('.modal')
 
     const input = document.getElementsByName('input')
     const nome = document.getElementById('Nome')
@@ -16,8 +17,7 @@ function validaContato(evt) {
 
 
     if (nome.value == "") {
-
-        nome.style.border = "2px solid red";
+        nome.style.background = "#ffa840"
         nome.focus();
         return false;
     } else {
@@ -26,17 +26,14 @@ function validaContato(evt) {
     }
 
     if (email.value == "" || email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
-
-        email.style.border = "2px solid red"
+        email.style.background = "#ffa840"
         email.focus();
         return false;
     } else {
-
         email.style.border = "2px solid blue";
-
     }
     if (telefone.value == "") {
-        telefone.style.border = "2px solid red"
+        telefone.style.background = "#ffa840"
         telefone.focus();
         return false;
     } else {
@@ -44,7 +41,7 @@ function validaContato(evt) {
     }
 
     if (mensagem.value == "") {
-        mensagem.style.border = "2px solid red"
+        mensagem.style.background = "#ffa840"
         mensagem.focus();
         return false;
     } else {
@@ -52,8 +49,8 @@ function validaContato(evt) {
     }
 
 
-    if (mensagem.value.length < 20) {
-        mensagem.style.border = "2px solid red"
+    if (mensagem.value.length < 10) {
+        mensagem.style.background = "#ffa840"
         mensagem.focus();
         return false;
     } else {
@@ -62,9 +59,18 @@ function validaContato(evt) {
 
     if (contErro > "") {
         evt.preventDefault();
-    }
+    } else {
+        document.getElementById("formContato").submit(),
+            $('#modal-contato').modal("show"),
+            $('.Modal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus'),
+                    evt.preventDefault()
 
+            })
+    }
 }
+
+
 
 //mascara ER
 function mascara(o, f) {
@@ -94,4 +100,5 @@ window.onload = function () {
     }
 
 }
+
 
