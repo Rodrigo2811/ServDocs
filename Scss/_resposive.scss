@@ -175,13 +175,13 @@
     justify-content: space-between;
     text-align: left;
     align-items: center;
-    width: 200px;
+    width: 300px !important;
     height: auto;
     padding: 0.375px;
   }
 
   .form-contato .btn-primary {
-    margin-left: -90px;
+    margin-left: 330px !important;
 
     width: 180px;
   }
@@ -215,7 +215,69 @@
 
     text-align: center;
   }
+
+  .container-contato {
+    display: grid !important;
+    margin-top: 20px;
+    margin-left: -330px !important;
+
+  }
+
+  .imagem-contato {
+    display: grid;
+    width: 200px;
+    margin-left: 367px !important;
+    margin-top: 4px !important;
+  }
+
+  .acordion {
+    display: block !important;
+    margin-top: 10px !important;
+    margin-left: -245px !important;
+    text-align: center;
+    padding-left: 30px;
+    width: 528px !important;
+    padding-top: 240px;
+  }
+
+  .slides {
+    position: relative;
+    width: 100px !important;
+    height: 100px !important;
+    transform-style: preserve-3d;
+    animation: animate 50s linear infinite;
+    margin-right: 90px;
+    margin-top: 90px;
+  }
+
+  .container-servicos {
+    display: block;
+    margin-top: 20px;
+    margin-left: -242px;
+  }
+
+  #furmulario-certidao {
+
+    margin-left: -256px;
+  }
+
+  #my-select {
+    margin-bottom: 20px;
+    border: 2px solid grey;
+    margin-left: 75px !important;
+    width: 375px !important;
+  }
+
+  #btn-certidao {
+    margin-left: 415px !important;
+    margin-top: 15px;
+    display: block;
+    width: 300px;
+  }
 }
+
+
+
 
 
 ////////////
