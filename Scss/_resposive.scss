@@ -1,10 +1,294 @@
 @media (max-width: 420px) {
 
   .fundo-imagem {
+    width: 90%;
+    height: 500px;
+    margin-top: -300px !important;
+    z-index: -2;
+  }
+
+  .fa-brands,
+  .fab {
+    font-weight: 400;
+    margin-left: auto;
+  }
+
+  .fa-solid,
+  .fas {
+    font-weight: 900;
+    margin-left: -35px;
+  }
+
+  header {
+    margin-top: -11px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    padding: 10px;
+    box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.388);
+
+  }
+
+  header img {
+    width: 120px;
+    height: auto;
+    z-index: 1;
+  }
+
+  nav {
+    z-index: 1;
+    display: flex;
+  }
+
+  nav ul {
+    list-style: none;
+    display: inline;
+  }
+
+  li {
+    display: inherit;
+    margin: 14px;
+    align-items: center;
+  }
+
+  .tarja {
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    font-weight: 700;
+    margin-top: -62px !important;
+
+  }
+
+  .box-1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .imagem-home {
+    margin-left: 50px !important;
+    border-radius: 1rem;
+    display: grid;
+    width: 80%;
+    cursor: pointer;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .box-2 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .box-2 img {
+    margin-top: 20px;
+    margin-left: 90px;
+    border-radius: 1rem;
+    display: flex;
+    width: 70%;
+    cursor: pointer;
+    position: relative;
+  }
+
+  footer {
+    width: 100%;
+    text-align: left;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 2px;
+    padding: 45px !important;
+
+  }
+
+  .footer h3 {
+    font-size: .6rem !important;
+  }
+
+  footer p {
+    font-size: .8rem !important;
+  }
+
+  .footer1 {
+    text-align: left;
+    display: block;
+    margin-left: -29px !important;
+
+  }
+
+  footer .Redes {
+    text-align: right;
+    display: block;
+    font-size: .7rem !important;
+    margin-right: -34px !important;
+
+  }
+
+  .img-logo {
+    margin-left: 0 !important;
+    margin-bottom: -169px;
+    margin-top: -225px;
+    z-index: 1;
+  }
+
+  .noticias {
+    width: 350px !important;
+    margin-top: -212px !important;
+    margin-bottom: 90px;
+    margin-left: 20px;
+
+  }
+
+  .container-titulo-contato {
+
+    width: 100% !important;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .titulo-contato {
+    text-align: center;
+    color: orange;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+
+  form div {
+    margin-left: 300px !important;
+    border: 0;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    width: 300px !important;
+    height: auto;
+    padding: 0.375px;
+  }
+
+  .form-contato .btn-primary {
+    margin-left: 330px !important;
+
+    width: 180px;
+  }
+
+  .imagem-contato {
+    display: none;
+  }
+
+  form input {
+    text-align: left;
+    width: 300px !important;
+  }
+
+  form textarea {
+    text-align: left;
+    width: 450px !important;
+  }
+
+  .form-control {
+    width: 1055px;
+    text-align: left;
+    font-size: 1.5rem;
+    width: 350px !important;
+  }
+
+  .img-sobre {
+    margin-left: 50px !important;
+  }
+
+  #sobre h2 {
+    text-align: center;
+  }
+
+  .container-contato {
+    display: grid !important;
+    margin-top: 20px;
+    margin-left: -330px !important;
+
+  }
+
+  .imagem-contato {
+    display: grid;
+    width: 200px;
+    margin-left: 367px !important;
+    margin-top: 4px !important;
+  }
+
+  .acordion {
+    display: block !important;
+    margin-top: 10px !important;
+    margin-left: -245px !important;
+    text-align: center;
+    padding-left: 30px;
+    width: 528px !important;
+    padding-top: 240px;
+  }
+
+  .slides {
+    position: relative;
+    width: 100px !important;
+    height: 100px !important;
+    transform-style: preserve-3d;
+    animation: animate 50s linear infinite;
+    margin-right: 90px;
+    margin-top: 90px;
+  }
+
+  .container-servicos {
+    display: block;
+    margin-top: 20px;
+    margin-left: -242px;
+  }
+
+  #furmulario-certidao {
+
+    margin-left: -256px;
+  }
+
+  #my-select {
+    margin-bottom: 20px;
+    border: 2px solid grey;
+    margin-left: 75px !important;
+    width: 375px !important;
+  }
+
+  #btn-certidao {
+    margin-left: 415px !important;
+    margin-top: 15px;
+    display: block;
+    width: 300px;
+  }
+}
+
+
+
+
+
+////////////
+
+@media (max-width: 960px) {
+
+  .fundo-imagem {
 
     width: 90%;
     height: 500px;
-
     margin-top: -300px !important;
     z-index: -2;
   }
@@ -129,14 +413,14 @@
   .footer1 {
     text-align: left;
     display: block;
-    margin-left: 15px !important;
+    margin-left: -27px !important;
   }
 
   footer .Redes {
     text-align: right;
     display: block;
     font-size: .7rem !important;
-    margin-right: 15px !important;
+    margin-right: -25px !important;
   }
 
   .img-logo {
@@ -273,170 +557,5 @@
     margin-top: 15px;
     display: block;
     width: 300px;
-  }
-}
-
-
-
-
-
-////////////
-
-@media (max-width: 1024px) {
-
-  .fundo-imagem {
-
-    width: 100%;
-    height: 500px;
-
-    margin-top: -300px !important;
-    z-index: -2;
-  }
-
-  .fa-whatsapp {
-    font-size: 1.5rem;
-    margin-left: 0px;
-  }
-
-  .fa-brands,
-  .fab {
-    font-weight: 400;
-    margin-left: auto;
-  }
-
-  .fa-solid,
-  .fas {
-    font-weight: 900;
-    margin-left: -35px;
-  }
-
-  header {
-
-    margin-top: -11px;
-
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
-    z-index: 1;
-    padding: 10px;
-  }
-
-  header img {
-    width: 150px;
-    height: auto;
-    z-index: 1;
-  }
-
-  nav {
-    z-index: 1;
-    display: flex;
-  }
-
-  nav ul {
-    list-style: none;
-    display: inline;
-  }
-
-  li {
-    display: inherit;
-    margin: 14px;
-    align-items: center;
-  }
-
-  .tarja {
-    width: 100%;
-    margin-top: -24px;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 50px;
-    font-weight: 700;
-
-  }
-
-  .box-1 {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 2px;
-    margin-left: 5px;
-    margin-bottom: 20px;
-
-    text-align: center;
-  }
-
-  .imagem-home {
-    margin-left: 90px !important;
-
-    display: flex;
-    width: 50% !important;
-    cursor: pointer;
-    position: relative;
-  }
-
-  .box-2 {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 2px;
-    margin-left: 5px;
-    margin-bottom: 20px;
-
-    text-align: center;
-  }
-
-  .box-2 img {
-    margin-top: 20px;
-    margin-left: 90px !important;
-    border-radius: 1rem;
-    display: flex;
-    width: 50% !important;
-    cursor: pointer;
-    position: relative;
-  }
-
-  footer {
-    width: 100%;
-    text-align: left;
-    display: block !important;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 45px;
-    margin-bottom: 2px;
-    padding: 30px !important;
-  }
-
-  .footer h3 {
-    font-size: .6rem !important;
-  }
-
-  footer p {
-    font-size: .8rem !important;
-  }
-
-  .footer1 {
-
-    text-align: left;
-    display: block;
-    margin-left: -37px;
-  }
-
-  footer .Redes {
-
-    text-align: right;
-    display: block;
-    font-size: .7rem !important;
-    margin-right: -35px;
-  }
-
-  .img-logo {
-    margin-left: 0 !important;
-    margin-bottom: -169px;
-    margin-top: -225px;
-    z-index: 1;
   }
 }

@@ -3,7 +3,6 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     padding: 0 auto;
-
 }
 
 h3 {
@@ -169,7 +168,7 @@ article p {
 .tarja {
 
     width: 100%;
-    margin-top: -24px;
+    margin-top: 0;
     margin-bottom: 20px;
     text-align: center;
     color: rgb(5, 13, 151);
@@ -177,6 +176,7 @@ article p {
     padding: 50px;
     font-weight: 700;
     box-shadow: 5px 2px 10px black;
+    z-index: -1;
 }
 
 .btn-primary {
@@ -197,15 +197,25 @@ article p {
 }
 
 .noticias {
-    margin-top: -250px;
+    margin-top: -243px;
     margin-bottom: 90px;
     width: 500px;
     margin-left: 20px;
+    z-index: 1;
 
+}
+
+.btn-fechar-informe {
+    width: 35px;
+    background: transparent;
+    border: none;
+    text-align: right;
+    margin-left: 320px;
 }
 
 .card {
     background: rgba(128, 128, 128, 0.532) !important;
+    z-index: 1;
 }
 
 .noticias .btn {
@@ -213,6 +223,7 @@ article p {
     background-color: rgb(5, 13, 151) !important;
     border-color: rgb(5, 13, 151) !important;
     width: 150px;
+    z-index: 1;
 }
 
 .container-maps {

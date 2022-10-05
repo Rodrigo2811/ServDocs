@@ -146,12 +146,14 @@ nav {
     text-align: center;
   }
   .imagem-home {
-    margin-left: 90px;
+    margin-left: 50px !important;
     border-radius: 1rem;
-    display: flex;
-    width: 70% !important;
+    display: grid;
+    width: 80%;
     cursor: pointer;
     position: relative;
+    align-content: center;
+    justify-content: center;
   }
   .box-2 {
     display: block;
@@ -191,13 +193,13 @@ nav {
   .footer1 {
     text-align: left;
     display: block;
-    margin-left: 15px !important;
+    margin-left: -29px !important;
   }
   footer .Redes {
     text-align: right;
     display: block;
     font-size: 0.7rem !important;
-    margin-right: 15px !important;
+    margin-right: -34px !important;
   }
   .img-logo {
     margin-left: 0 !important;
@@ -310,16 +312,12 @@ nav {
     width: 300px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
   .fundo-imagem {
-    width: 100%;
+    width: 90%;
     height: 500px;
     margin-top: -300px !important;
     z-index: -2;
-  }
-  .fa-whatsapp {
-    font-size: 1.5rem;
-    margin-left: 0px;
   }
   .fa-brands,
 .fab {
@@ -340,9 +338,10 @@ nav {
     width: 100%;
     z-index: 1;
     padding: 10px;
+    box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.388);
   }
   header img {
-    width: 150px;
+    width: 120px;
     height: auto;
     z-index: 1;
   }
@@ -361,11 +360,10 @@ nav {
   }
   .tarja {
     width: 100%;
-    margin-top: -24px;
-    margin-bottom: 20px;
     text-align: center;
     padding: 50px;
     font-weight: 700;
+    margin-top: -62px !important;
   }
   .box-1 {
     display: block;
@@ -378,9 +376,10 @@ nav {
     text-align: center;
   }
   .imagem-home {
-    margin-left: 90px !important;
+    margin-left: 90px;
+    border-radius: 1rem;
     display: flex;
-    width: 50% !important;
+    width: 70% !important;
     cursor: pointer;
     position: relative;
   }
@@ -396,22 +395,22 @@ nav {
   }
   .box-2 img {
     margin-top: 20px;
-    margin-left: 90px !important;
+    margin-left: 90px;
     border-radius: 1rem;
     display: flex;
-    width: 50% !important;
+    width: 70%;
     cursor: pointer;
     position: relative;
   }
   footer {
     width: 100%;
     text-align: left;
-    display: block !important;
+    display: flex !important;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 45px;
     margin-bottom: 2px;
-    padding: 30px !important;
+    padding: 45px !important;
   }
   .footer h3 {
     font-size: 0.6rem !important;
@@ -422,19 +421,123 @@ nav {
   .footer1 {
     text-align: left;
     display: block;
-    margin-left: -37px;
+    margin-left: -27px !important;
   }
   footer .Redes {
     text-align: right;
     display: block;
     font-size: 0.7rem !important;
-    margin-right: -35px;
+    margin-right: -25px !important;
   }
   .img-logo {
     margin-left: 0 !important;
     margin-bottom: -169px;
     margin-top: -225px;
     z-index: 1;
+  }
+  .noticias {
+    width: 350px !important;
+    margin-top: -212px !important;
+    margin-bottom: 90px;
+    margin-left: 20px;
+  }
+  .container-titulo-contato {
+    width: 100% !important;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .titulo-contato {
+    text-align: center;
+    color: orange;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+  form div {
+    margin-left: 300px !important;
+    border: 0;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    width: 300px !important;
+    height: auto;
+    padding: 0.375px;
+  }
+  .form-contato .btn-primary {
+    margin-left: 330px !important;
+    width: 180px;
+  }
+  .imagem-contato {
+    display: none;
+  }
+  form input {
+    text-align: left;
+    width: 300px !important;
+  }
+  form textarea {
+    text-align: left;
+    width: 450px !important;
+  }
+  .form-control {
+    width: 1055px;
+    text-align: left;
+    font-size: 1.5rem;
+    width: 350px !important;
+  }
+  .img-sobre {
+    margin-left: 50px !important;
+  }
+  #sobre h2 {
+    text-align: center;
+  }
+  .container-contato {
+    display: grid !important;
+    margin-top: 20px;
+    margin-left: -330px !important;
+  }
+  .imagem-contato {
+    display: grid;
+    width: 200px;
+    margin-left: 367px !important;
+    margin-top: 4px !important;
+  }
+  .acordion {
+    display: block !important;
+    margin-top: 10px !important;
+    margin-left: -245px !important;
+    text-align: center;
+    padding-left: 30px;
+    width: 528px !important;
+    padding-top: 240px;
+  }
+  .slides {
+    position: relative;
+    width: 100px !important;
+    height: 100px !important;
+    transform-style: preserve-3d;
+    animation: animate 50s linear infinite;
+    margin-right: 90px;
+    margin-top: 90px;
+  }
+  .container-servicos {
+    display: block;
+    margin-top: 20px;
+    margin-left: -242px;
+  }
+  #furmulario-certidao {
+    margin-left: -256px;
+  }
+  #my-select {
+    margin-bottom: 20px;
+    border: 2px solid grey;
+    margin-left: 75px !important;
+    width: 375px !important;
+  }
+  #btn-certidao {
+    margin-left: 415px !important;
+    margin-top: 15px;
+    display: block;
+    width: 300px;
   }
 }
 footer {
@@ -487,6 +590,17 @@ footer .Redes {
 .fa-brands:hover {
   color: orange;
   font-size: 0.7rem;
+}
+
+.formasPag {
+  width: 300px;
+  display: block;
+}
+
+.formasPag img {
+  width: 300px;
+  display: block;
+  margin-left: 160px;
 }
 
 form h4 {
@@ -805,7 +919,7 @@ article p {
 
 .tarja {
   width: 100%;
-  margin-top: -24px;
+  margin-top: 0;
   margin-bottom: 20px;
   text-align: center;
   color: rgb(5, 13, 151);
@@ -813,6 +927,7 @@ article p {
   padding: 50px;
   font-weight: 700;
   box-shadow: 5px 2px 10px black;
+  z-index: -1;
 }
 
 .btn-primary {
@@ -832,14 +947,24 @@ article p {
 }
 
 .noticias {
-  margin-top: -250px;
+  margin-top: -243px;
   margin-bottom: 90px;
   width: 500px;
   margin-left: 20px;
+  z-index: 1;
+}
+
+.btn-fechar-informe {
+  width: 35px;
+  background: transparent;
+  border: none;
+  text-align: right;
+  margin-left: 320px;
 }
 
 .card {
   background: rgba(128, 128, 128, 0.532) !important;
+  z-index: 1;
 }
 
 .noticias .btn {
@@ -847,6 +972,7 @@ article p {
   background-color: rgb(5, 13, 151) !important;
   border-color: rgb(5, 13, 151) !important;
   width: 150px;
+  z-index: 1;
 }
 
 .container-maps {

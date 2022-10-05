@@ -30,13 +30,15 @@
 
 	<div class="fundo-imagem">
 	</div>
-	<div class="noticias">
+	<div class="noticias" id="noticias">
 		<div class="card">
-			<h5 class="card-header">Importante</h5>
+			<h5 class="card-header">Informativo <button class="btn-fechar-informe" onclick="fechaInforme()"><i
+						class="fa-sharp fa-solid fa-xmark"></i></button></h5>
 			<div class="card-body">
-				<h5 class="card-title">Nova Lei de Certidão</h5>
-				<p class="card-text">A nova lei de certidao.</p>
-				<a href="#" class="btn btn-primary">Saiba Mais</a>
+				<h5 class="card-title">Lei Nº 14.382, de 27 de junho de 2022</h5>
+				<p class="card-text" id="demo"></p>
+				<a href="#" class="btn btn-primary" onclick="loadDoc()">Saiba Mais</a>
+
 			</div>
 		</div>
 	</div>

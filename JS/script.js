@@ -101,4 +101,20 @@ window.onload = function () {
 
 }
 
+function fechaInforme(noticias) {
+    if (document.getElementById("noticias").style.display == 'block') {
+        document.getElementById("noticias").style.display = 'none';
+    } else {
+        document.getElementById("noticias").style.display = 'block';
+    }
+}
+
+function loadDoc() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+        document.getElementById('demo').innerHTML = this.responseText
+    }
+    xhttp.open("GET", "lei.txt")
+    xhttp.send();
+}
 
